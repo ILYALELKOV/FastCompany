@@ -1,8 +1,9 @@
 import React from 'react'
+import Users from './components/users'
 
 function App() {
     return (
-        <h1 className="m-2">Hello World</h1>
+        <Users/>
     )
 }
 
