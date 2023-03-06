@@ -8,9 +8,21 @@ const Users = () => {
         setUsers((prevState) => prevState.filter(users => users._id !== id))
     }
 
+    const renderMessage = (number) => {
+        const last = Number(number.toString().slice(-1))
+
+        if ((last > 1 && last < 5 && number < 5) || (number > 20 && last > 1 && last < 5)) {
+            return `${number} человека тусанет с тобой сегодня`
+        } else {
+            return `${number} человек тусанет с тобой сегодня`
+        }
+    }
+
     return (
         <>
-            <span className="badge bg-primary m-3 fs-6">Тусанут с тобой</span>
+            <span className={'fs-6 m-3 badge ' + (users.length > 0 ? 'bg-primary ' : 'bg-danger')}>
+                {users.length > 0 ? renderMessage(users.length) : 'Никто с тобой не тусанет'}
+            </span>
             <table className="table">
                 <thead>
                 <tr>
