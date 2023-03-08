@@ -78,6 +78,4 @@ const Users = () => {
 	)
 }
 
-function test() {}
-
 export default Users
