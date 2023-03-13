@@ -4,7 +4,8 @@ const Bookmark = ({ onUpdateBookmark, bookmark, _id }) => {
 	return (
 		<>
 			<i
-				className={bookmark ? 'bi bi-circle-fill' : 'bi bi-circle'}
+				className={bookmark ? 'bi bi-heart-fill mx-4' : 'bi bi-heart mx-4'}
+				style={{ fontSize: '1.5rem' }}
 				onClick={() => onUpdateBookmark(_id)}
 			></i>
 		</>

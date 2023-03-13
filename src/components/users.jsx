@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import api from '../api'
 import SearchStatus from './searchStatus'
-import Bookmark from './bookmark'
-import Qualitie from './qualitie'
+import User from './user'
 
 const Users = () => {
 	const [users, setUsers] = useState(api.users.fetchAll())
@@ -38,28 +37,11 @@ const Users = () => {
 						</tr>
 					</thead>
 					<tbody>
-						{users.map((user) => (
-							<tr key={user._id}>
-								<td>{user.name}</td>
-								<td>
-									<Qualitie user={user} />
-								</td>
-								<td>{user.profession.name}</td>
-								<td>{user.completedMeetings}</td>
-								<td>{user.rate + ' / 5'}</td>
-								<td>
-									<Bookmark {...user} onUpdateBookmark={handleUpdateBookmark} />
-								</td>
-								<td>
-									<button
-										className="btn btn-danger"
-										onClick={() => handleDeleteUser(user._id)}
-									>
-										delete
-									</button>
-								</td>
-							</tr>
-						))}
+						<User
+							users={users}
+							onUpdateBookmark={handleUpdateBookmark}
+							onDeleteUser={handleDeleteUser}
+						/>
 					</tbody>
 				</table>
 			)}

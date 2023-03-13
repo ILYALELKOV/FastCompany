@@ -17,9 +17,7 @@ const SearchStatus = ({ length }) => {
 	return (
 		<div>
 			<span
-				className={
-					'fs-6 m-2 badge ' + (length > 0 ? 'bg-primary ' : 'bg-danger')
-				}
+				className={'fs-5 m-2 badge ' + (length > 0 ? 'bg-dark ' : 'bg-danger')}
 			>
 				{length > 0 ? renderMessage(length) : 'Никто с тобой не тусанет'}
 			</span>
