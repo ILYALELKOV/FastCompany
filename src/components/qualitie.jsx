@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Qualitie = ({ user }) => {
 	return (
@@ -10,6 +11,10 @@ const Qualitie = ({ user }) => {
 			))}
 		</>
 	)
+}
+
+Qualitie.propTypes = {
+	user: PropTypes.object.isRequired
 }
 
 export default Qualitie

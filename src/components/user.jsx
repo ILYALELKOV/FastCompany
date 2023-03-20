@@ -1,6 +1,7 @@
 import React from 'react'
 import Qualitie from './qualitie'
 import Bookmark from './bookmark'
+import PropTypes from 'prop-types'
 
 const User = ({ users, onUpdateBookmark, onDeleteUser }) => {
 	return (
@@ -41,6 +42,12 @@ const User = ({ users, onUpdateBookmark, onDeleteUser }) => {
 			))}
 		</>
 	)
+}
+
+User.propTypes = {
+	users: PropTypes.array.isRequired,
+	onUpdateBookmark: PropTypes.func.isRequired,
+	onDeleteUser: PropTypes.func.isRequired
 }
 
 export default User
