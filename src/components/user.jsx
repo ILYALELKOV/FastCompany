@@ -23,7 +23,11 @@ const User = ({ users, onUpdateBookmark, onDeleteUser }) => {
 						<span className="mx-2 fs-5">{user.rate + ' / 5'}</span>
 					</td>
 					<td>
-						<Bookmark {...user} onUpdateBookmark={onUpdateBookmark} />
+						<Bookmark
+							bookmark={user.bookmark}
+							onUpdateBookmark={onUpdateBookmark}
+							id={user._id}
+						/>
 					</td>
 					<td>
 						<button

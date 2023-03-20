@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="create style">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="final result, compositions components">
+      <change afterPath="$PROJECT_DIR$/src/components/pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/paginate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookmark.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -35,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/FastCompany&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/fastCompany2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +90,14 @@
       <workItem from="1678682827582" duration="4301000" />
       <workItem from="1678695225045" duration="7092000" />
       <workItem from="1678711754374" duration="1431000" />
+      <workItem from="1678713484733" duration="315000" />
+      <workItem from="1678757507904" duration="439000" />
+      <workItem from="1678775446706" duration="7000" />
+      <workItem from="1678778443870" duration="3230000" />
+      <workItem from="1678785019559" duration="174000" />
+      <workItem from="1679281371214" duration="65000" />
+      <workItem from="1679281711690" duration="63000" />
+      <workItem from="1679282630638" duration="4091000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -130,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678712199227</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final result, compositions components">
+      <created>1678713792450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678713792450</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +180,7 @@
     <MESSAGE value="refactor code" />
     <MESSAGE value="create all components" />
     <MESSAGE value="create style" />
-    <option name="LAST_COMMIT_MESSAGE" value="create style" />
+    <MESSAGE value="final result, compositions components" />
+    <option name="LAST_COMMIT_MESSAGE" value="final result, compositions components" />
   </component>
 </project>
