@@ -6,7 +6,7 @@ function App() {
 	const [users, setUsers] = useState(api.users.fetchAll())
 
 	const handleDeleteUser = (id) => {
-		setUsers((prevState) => prevState.filter((users) => users._id !== id))
+		setUsers(users.filter((users) => users._id !== id))
 	}
 
 	const handleUpdateBookmark = (id) => {

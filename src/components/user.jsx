@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Qualitie from './qualitie'
 import Bookmark from './bookmark'
-import PropTypes from 'prop-types'
+import Button from '../UI/button'
 
 const User = ({ users, onUpdateBookmark, onDeleteUser }) => {
 	return (
@@ -31,12 +32,9 @@ const User = ({ users, onUpdateBookmark, onDeleteUser }) => {
 						/>
 					</td>
 					<td>
-						<button
-							className="btn btn-danger btn-lg"
-							onClick={() => onDeleteUser(user._id)}
-						>
+						<Button onDeleteUser={onDeleteUser} user={user}>
 							delete
-						</button>
+						</Button>
 					</td>
 				</tr>
 			))}

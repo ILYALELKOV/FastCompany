@@ -3,11 +3,6 @@ body {
     box-sizing: border-box;
 }
 
-button {
-    width: 180px;
-    height: 45px;
-}
-
 nav {
     width: 100px;
     margin: 0 auto;
