@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="create favicon">
-      <change afterPath="$PROJECT_DIR$/src/api/fake.api/professions.api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/groupList.jsx" afterDir="false" />
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="create filter">
       <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/fake.api/professions.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/fake.api/professions.api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/fake.api/user.api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchStatus.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +133,14 @@
       <workItem from="1679476196064" duration="125000" />
       <workItem from="1679640339238" duration="170000" />
       <workItem from="1679729186115" duration="6597000" />
-      <workItem from="1679873455707" duration="8625000" />
+      <workItem from="1679873455707" duration="9077000" />
+      <workItem from="1679882719463" duration="18000" />
+      <workItem from="1679882959535" duration="1156000" />
+      <workItem from="1679887158635" duration="6304000" />
+      <workItem from="1679893719709" duration="56000" />
+      <workItem from="1679893862464" duration="1753000" />
+      <workItem from="1679895721034" duration="1203000" />
+      <workItem from="1679897403404" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -220,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679736153508</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="create filter">
+      <created>1679882347759</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679882347759</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +270,7 @@
     <MESSAGE value="finished eslint setting" />
     <MESSAGE value="create UI component and change language in HTML file" />
     <MESSAGE value="create favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="create favicon" />
+    <MESSAGE value="create filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="create filter" />
   </component>
 </project>

@@ -33,28 +33,25 @@ const Users = ({ users, onHandleDeleteUser, onHandleUpdateBookmark }) => {
 	const clearFilter = () => {
 		setSelectedProf()
 	}
-
 	const filteredUsers = selectedProf
-		? users.filter((user) => user.profession === selectedProf)
+		? users.filter((user) => user.profession.name === selectedProf.name)
 		: users
 
 	const count = filteredUsers.length
 	const userCrop = paginate(filteredUsers, currentPage, pageSize)
-
 	if (userCrop.length === 0 && currentPage > 1) {
 		setCurrentPage(currentPage - 1)
 	}
-
 	return (
-		<div className="d-flex">
+		<div className="d-flex justify-content-center">
 			{professions && (
-				<div className="d-flex flex-column flex-shrink-0 p-3">
+				<div className="d-flex flex-column flex-shrink-0 p-2">
 					<GroupList
 						selectedItem={selectedProf}
 						items={professions}
 						onItemSelect={handleProfessionSelect}
 					/>
-					<button className="btn btn-secondary mt-2" onClick={clearFilter}>
+					<button className="btn btn-warning mt-2 mt-3" onClick={clearFilter}>
 						Очистить
 					</button>
 				</div>

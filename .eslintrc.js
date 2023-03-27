@@ -12,7 +12,7 @@ module.exports = {
 	plugins: ['react'],
 	rules: {
 		'comma-dangle': ['error', 'never'],
-		indent: ['error', 'tab'],
+		indent: 'off',
 		'no-tabs': 0,
 		semi: ['error', 'never'],
 		quotes: ['error', 'single'],
