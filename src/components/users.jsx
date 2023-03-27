@@ -22,8 +22,8 @@ const Users = ({ users, onHandleDeleteUser, onHandleUpdateBookmark }) => {
 		api.professions.fetchAll().then((data) => setProfession(data))
 	}, [])
 
-	const handleProfessionSelect = (item) => {
-		setSelectedProf(item)
+	const handleProfessionSelect = (chosenProfession) => {
+		setSelectedProf(chosenProfession)
 	}
 
 	const handlePageChange = (pageIndex) => {
