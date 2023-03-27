@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import Loader from './loader'
 
 const SearchStatus = ({ length }) => {
 	const [isLoading, setIsLoading] = useState(true)
@@ -31,11 +32,13 @@ const SearchStatus = ({ length }) => {
 					(isLoading ? 'bg-info' : length > 0 ? 'bg-dark ' : 'bg-danger')
 				}
 			>
-				{isLoading
-					? 'Загрузка пользователей ...'
-					: length > 0
-					? renderMessage(length)
-					: 'Никто с тобой не тусанет'}
+				{isLoading ? (
+					<Loader />
+				) : length > 0 ? (
+					renderMessage(length)
+				) : (
+					'Никто с тобой не тусанет'
+				)}
 			</span>
 		</div>
 	)

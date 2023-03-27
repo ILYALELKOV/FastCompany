@@ -34,7 +34,7 @@ const Users = ({ users, onHandleDeleteUser, onHandleUpdateBookmark }) => {
 		setSelectedProf()
 	}
 	const filteredUsers = selectedProf
-		? users.filter((user) => user.profession.name === selectedProf.name)
+		? users.filter((user) => user.profession._id === selectedProf._id)
 		: users
 
 	const count = filteredUsers.length

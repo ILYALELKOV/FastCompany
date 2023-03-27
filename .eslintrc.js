@@ -16,6 +16,8 @@ module.exports = {
 		'no-tabs': 0,
 		semi: ['error', 'never'],
 		quotes: ['error', 'single'],
+		'eol-last': 'off',
+		'multiline-ternary': 'off',
 		'space-before-function-paren': [
 			'error',
 			{ anonymous: 'always', named: 'never' }

@@ -8,35 +8,23 @@ const GroupList = ({
 	contentProperty,
 	selectedItem
 }) => {
-	let data = {}
+	const itemList = Array.isArray(items) ? items : Object.values(items)
 
-	if (Array.isArray(items)) {
-		items.forEach((item) => {
-			data[item[valueProperty]] = item
-		})
-	} else {
-		data = items
-	}
-
-	const professions = Object.keys(data)
 	return (
-		<>
-			<ul className="list-group">
-				{professions.map((profession) => (
-					<li
-						key={data[profession][valueProperty]}
-						className={
-							'list-group-item' +
-							(data[profession] === selectedItem ? ' active' : '')
-						}
-						onClick={() => onItemSelect(data[profession])}
-						role="button"
-					>
-						{data[profession][contentProperty]}
-					</li>
-				))}
-			</ul>
-		</>
+		<ul className="list-group">
+			{itemList.map((item) => (
+				<li
+					key={item[valueProperty]}
+					className={
+						'list-group-item' + (item === selectedItem ? ' active' : '')
+					}
+					onClick={() => onItemSelect(item)}
+					role="button"
+				>
+					{item[contentProperty]}
+				</li>
+			))}
+		</ul>
 	)
 }
 
