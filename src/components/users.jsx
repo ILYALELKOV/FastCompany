@@ -43,7 +43,7 @@ const Users = ({ users, onHandleDeleteUser, onHandleUpdateBookmark }) => {
 		setCurrentPage(currentPage - 1)
 	}
 	return (
-		<div className="d-flex justify-content-center">
+		<div className="d-flex justify-content-center mt-5">
 			{professions && (
 				<div className="d-flex flex-column flex-shrink-0 p-2">
 					<GroupList
