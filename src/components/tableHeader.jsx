@@ -14,7 +14,7 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
 		}
 	}
 
-	const renderCaret = (column) => {
+	const handleRenderCaret = (column) => {
 		if (selectedColumn === column) {
 			return selectedSort.order === 'asc' ? (
 				<i className="bi bi-caret-up-fill"></i>
@@ -48,7 +48,7 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
 							{...{ role: columns[column].path && 'button' }}
 						>
 							{columns[column].name}
-							{renderCaret(column)}
+							{handleRenderCaret(column)}
 						</th>
 					))}
 				</tr>
