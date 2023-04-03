@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="create loader component">
-      <change afterPath="$PROJECT_DIR$/src/components/qualitiesList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/tableBody.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/tableHeader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/usersTable.jsx" afterDir="false" />
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="create sort">
+      <change afterPath="$PROJECT_DIR$/src/components/table.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/usersTable.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +149,7 @@
       <workItem from="1679919678218" duration="1170000" />
       <workItem from="1679966134440" duration="1549000" />
       <workItem from="1679994170751" duration="1589000" />
-      <workItem from="1680478408167" duration="10810000" />
+      <workItem from="1680478408167" duration="16332000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -261,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679908936695</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="create sort">
+      <created>1680493503874</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680493503874</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +303,7 @@
     <MESSAGE value="create filter" />
     <MESSAGE value="change api and final result filter" />
     <MESSAGE value="create loader component" />
-    <option name="LAST_COMMIT_MESSAGE" value="create loader component" />
+    <MESSAGE value="create sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="create sort" />
   </component>
 </project>

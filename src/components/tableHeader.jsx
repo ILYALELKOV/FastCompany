@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 const TableHeader = ({ onSort, selectedSort, columns }) => {
+	const [selectedColumn, setSelectedColumn] = useState(null)
 	const handleSort = (item) => {
 		if (selectedSort.path === item) {
 			onSort({
@@ -13,6 +14,22 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
 		}
 	}
 
+	const renderCaret = (column) => {
+		if (selectedColumn === column) {
+			return selectedSort.order === 'asc' ? (
+				<i className="bi bi-caret-up-fill"></i>
+			) : (
+				<i className="bi bi-caret-down-fill"></i>
+			)
+		} else {
+			return null
+		}
+	}
+
+	const handleClick = (column) => {
+		setSelectedColumn(column)
+	}
+
 	return (
 		<>
 			<thead>
@@ -22,12 +39,16 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
 							key={column}
 							onClick={
 								columns[column].path
-									? () => handleSort(columns[column].path)
+									? () => {
+											handleSort(columns[column].path)
+											handleClick(column)
+									  }
 									: undefined
 							}
 							{...{ role: columns[column].path && 'button' }}
 						>
 							{columns[column].name}
+							{renderCaret(column)}
 						</th>
 					))}
 				</tr>

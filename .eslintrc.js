@@ -18,6 +18,7 @@ module.exports = {
 		quotes: ['error', 'single'],
 		'eol-last': 'off',
 		'multiline-ternary': 'off',
+		'no-mixed-spaces-and-tabs': 'off',
 		'space-before-function-paren': [
 			'error',
 			{ anonymous: 'always', named: 'never' }

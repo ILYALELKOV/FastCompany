@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import TableHeader from './tableHeader'
-import TableBody from './tableBody'
-import User from './user'
 import Bookmark from './bookmark'
 import Button from '../UI/button'
 import QualitiesList from './qualitiesList'
+import Table from './table'
 
 const UsersTable = ({
 	onUpdateBookmark,
@@ -44,19 +42,12 @@ const UsersTable = ({
 	}
 
 	return (
-		<>
-			<table className="table">
-				<TableHeader {...{ onSort, selectedSort, columns }} />
-				<TableBody {...{ columns, data: users }} />
-				<tbody>
-					<User
-						users={users}
-						onUpdateBookmark={onUpdateBookmark}
-						onDeleteUser={onDeleteUser}
-					/>
-				</tbody>
-			</table>
-		</>
+		<Table
+			onSort={onSort}
+			selectedSort={selectedSort}
+			columns={columns}
+			data={users}
+		/>
 	)
 }
 
