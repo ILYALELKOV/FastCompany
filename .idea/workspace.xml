@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="small changes - rename function render caret">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="change table head component? delete usestate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableHeader.jsx" afterDir="false" />
     </list>
@@ -28,6 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/tableHeader.jsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/FastCompany&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/FastCompany/public/index.html&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -56,12 +59,18 @@
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
   <component name="RunManager" selected="npm.npm start">
+    <configuration name="DEBUG" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="tableHeader.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/tableHeader.jsx" working-dir="$PROJECT_DIR$/src/components">
       <method v="2" />
     </configuration>
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -84,8 +93,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.DEBUG" />
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="Node.js.tableHeader.jsx" />
+      <item itemvalue="npm.npm start" />
+      <item itemvalue="npm.format" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.tableHeader.jsx" />
         <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
@@ -145,7 +162,11 @@
       <workItem from="1680478408167" duration="16492000" />
       <workItem from="1680499679664" duration="114000" />
       <workItem from="1680502120429" duration="216000" />
-      <workItem from="1680502935480" duration="7490000" />
+      <workItem from="1680502935480" duration="8099000" />
+      <workItem from="1680516668305" duration="1339000" />
+      <workItem from="1680518040035" duration="1057000" />
+      <workItem from="1680523453063" duration="3918000" />
+      <workItem from="1680576615429" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -280,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680503819975</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="change table head component? delete usestate">
+      <created>1680510774924</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680510774924</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +344,7 @@
     <MESSAGE value="create sort" />
     <MESSAGE value="sort final result" />
     <MESSAGE value="small changes - rename function render caret" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes - rename function render caret" />
+    <MESSAGE value="change table head component? delete usestate" />
+    <option name="LAST_COMMIT_MESSAGE" value="change table head component? delete usestate" />
   </component>
 </project>

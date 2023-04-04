@@ -14,9 +14,8 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
 	}
 	const handleRenderCaret = (column) => {
 		if (
-			selectedSort &&
-			selectedSort.path &&
-			selectedSort.path.substring(0, 3) === column.substring(0, 3)
+			columns[column].path === selectedSort.path &&
+			selectedSort.path !== undefined
 		) {
 			if (selectedSort.order === 'asc') {
 				return <i className="bi bi-caret-up-fill"></i>
