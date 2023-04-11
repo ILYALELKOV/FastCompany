@@ -10,7 +10,9 @@ const User = ({ users, onUpdateBookmark, onDeleteUser }) => {
 			{users.map((user) => (
 				<tr key={user._id}>
 					<td>
-						<span className="fs-5">{user.name}</span>
+						<span className="fs-5">
+							<a>{user.name}</a>
+						</span>
 					</td>
 					<td>
 						<Qualitie user={user} />

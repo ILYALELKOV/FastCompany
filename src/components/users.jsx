@@ -73,42 +73,47 @@ const Users = () => {
 			setCurrentPage(currentPage - 1)
 		}
 		return (
-			<div className="d-flex justify-content-center mt-5">
-				{professions && (
-					<div className="d-flex flex-column flex-shrink-0 p-2">
-						<GroupList
-							selectedItem={selectedProf}
-							items={professions}
-							onItemSelect={handleProfessionSelect}
-						/>
-						<button className="btn btn-warning mt-2 mt-3" onClick={clearFilter}>
-							Очистить
-						</button>
-					</div>
-				)}
-				<div className="d-flex flex-column">
-					<SearchStatus length={count} />
-					{count > 0 && (
-						<UsersTable
-							selectedSort={sortBy}
-							onSort={handleSort}
-							onDeleteUser={handleDeleteUser}
-							onUpdateBookmark={handleUpdateBookmark}
-							users={userCrop}
-							onDelete={handleDeleteUser}
-							onToggleBookmark={handleUpdateBookmark}
-						/>
+			<>
+				<div className="d-flex justify-content-center mt-3">
+					{professions && (
+						<div className="d-flex flex-column flex-shrink-0 p-2">
+							<GroupList
+								selectedItem={selectedProf}
+								items={professions}
+								onItemSelect={handleProfessionSelect}
+							/>
+							<button
+								className="btn btn-warning mt-2 mt-3"
+								onClick={clearFilter}
+							>
+								Очистить
+							</button>
+						</div>
 					)}
-					<div className="d-flex justify-content-center">
-						<Pagination
-							itemsCount={count}
-							pageSize={pageSize}
-							currentPage={currentPage}
-							onPageChange={handlePageChange}
-						/>
+					<div className="d-flex flex-column">
+						<SearchStatus length={count} />
+						{count > 0 && (
+							<UsersTable
+								selectedSort={sortBy}
+								onSort={handleSort}
+								onDeleteUser={handleDeleteUser}
+								onUpdateBookmark={handleUpdateBookmark}
+								users={userCrop}
+								onDelete={handleDeleteUser}
+								onToggleBookmark={handleUpdateBookmark}
+							/>
+						)}
+						<div className="d-flex justify-content-center">
+							<Pagination
+								itemsCount={count}
+								pageSize={pageSize}
+								currentPage={currentPage}
+								onPageChange={handlePageChange}
+							/>
+						</div>
 					</div>
 				</div>
-			</div>
+			</>
 		)
 	}
 	return <Loader />

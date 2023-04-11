@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="change function handleRenderCaret, final result lesson 6">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="install react-router-dom">
+      <change afterPath="$PROJECT_DIR$/src/components/navBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/userPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/fake.api/user.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +186,7 @@
       <workItem from="1681176823215" duration="2000" />
       <workItem from="1681176837114" duration="109000" />
       <workItem from="1681176966552" duration="8000" />
-      <workItem from="1681177014387" duration="1231000" />
+      <workItem from="1681177014387" duration="14074000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -326,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680577475989</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="install react-router-dom">
+      <created>1681178789360</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681178789360</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +380,7 @@
     <MESSAGE value="small changes - rename function render caret" />
     <MESSAGE value="change table head component? delete usestate" />
     <MESSAGE value="change function handleRenderCaret, final result lesson 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="change function handleRenderCaret, final result lesson 6" />
+    <MESSAGE value="install react-router-dom" />
+    <option name="LAST_COMMIT_MESSAGE" value="install react-router-dom" />
   </component>
 </project>
