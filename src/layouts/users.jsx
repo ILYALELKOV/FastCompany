@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import _ from 'lodash'
-import Pagination from './pagination'
+import Pagination from '../components/pagination'
 import { paginate } from '../utils/paginate'
-import GroupList from './groupList'
+import GroupList from '../components/groupList'
 import api from '../api'
-import SearchStatus from './searchStatus'
-import UsersTable from './usersTable'
-import Loader from './loader'
+import SearchStatus from '../components/searchStatus'
+import UsersTable from '../components/usersTable'
+import Loader from '../components/loader'
 import { useHistory, useParams } from 'react-router-dom'
-import UserPage from './userPage'
+import UserPage from '../components/userPage'
 
 const Users = () => {
 	const [currentPage, setCurrentPage] = useState(1)
