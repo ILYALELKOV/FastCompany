@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="react-router-dom REFACTOR">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="final result react-router-dom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/usersTable.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +68,6 @@
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\layouts" />
-    </key>
-  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="DEBUG" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -184,9 +183,7 @@
       <workItem from="1681176966552" duration="8000" />
       <workItem from="1681177014387" duration="18862000" />
       <workItem from="1681200254378" duration="45000" />
-      <workItem from="1681346627908" duration="4461000" />
-      <workItem from="1681359642724" duration="114000" />
-      <workItem from="1681365872988" duration="233000" />
+      <workItem from="1681346627908" duration="4208000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -356,14 +353,7 @@
       <option name="project" value="LOCAL" />
       <updated>1681199998786</updated>
     </task>
-    <task id="LOCAL-00025" summary="react-router-dom REFACTOR">
-      <created>1681359550652</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1681359550652</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +394,6 @@
     <MESSAGE value="install react-router-dom" />
     <MESSAGE value="create user card" />
     <MESSAGE value="final result react-router-dom" />
-    <MESSAGE value="react-router-dom REFACTOR" />
-    <option name="LAST_COMMIT_MESSAGE" value="react-router-dom REFACTOR" />
+    <option name="LAST_COMMIT_MESSAGE" value="final result react-router-dom" />
   </component>
 </project>
