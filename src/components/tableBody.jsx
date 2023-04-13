@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
-import { useHistory } from 'react-router-dom'
 
-const TableBody = ({ data, columns }) => {
-	const history = useHistory()
+const TableBody = ({ data, columns, onHandleSave }) => {
 	const renderContent = (item, column) => {
 		if (columns[column].component) {
 			const component = columns[column].component
@@ -14,10 +12,6 @@ const TableBody = ({ data, columns }) => {
 			return component
 		}
 		return _.get(item, columns[column].path)
-	}
-	const handleSave = (item) => {
-		const userId = item._id
-		history.push(`/user/${userId}`)
 	}
 
 	return (
@@ -29,7 +23,7 @@ const TableBody = ({ data, columns }) => {
 							{index === 0 ? (
 								<a
 									onClick={() => {
-										handleSave(item)
+										onHandleSave(item)
 									}}
 									style={{ cursor: 'pointer' }}
 								>
@@ -52,5 +46,6 @@ export default TableBody
 
 TableBody.propTypes = {
 	data: PropTypes.array.isRequired,
-	columns: PropTypes.object.isRequired
+	columns: PropTypes.object.isRequired,
+	onHandleSave: PropTypes.func.isRequired
 }

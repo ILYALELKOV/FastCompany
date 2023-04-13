@@ -11,9 +11,9 @@ function App() {
 		<>
 			<NavBar />
 			<Switch>
-				<Route path="/users" component={Users} />
+				<Route path="/users/:userId?" component={Users} />
 				<Route path="/login" component={Login} />
-				<Route path="/user/:userId?" component={UserPage} />
+				<Route path="/user" component={UserPage} />
 				<Route path="/" component={Main} />
 			</Switch>
 		</>

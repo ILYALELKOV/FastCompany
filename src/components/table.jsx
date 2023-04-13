@@ -3,13 +3,20 @@ import TableHeader from './tableHeader'
 import TableBody from './tableBody'
 import PropTypes from 'prop-types'
 
-const Table = ({ onSort, selectedSort, data, columns, children }) => {
+const Table = ({
+	onSort,
+	selectedSort,
+	data,
+	columns,
+	children,
+	onHandleSave
+}) => {
 	return (
 		<table className="table">
 			{children || (
 				<>
 					<TableHeader {...{ onSort, selectedSort, columns }} />
-					<TableBody {...{ columns, data }} />
+					<TableBody onHandleSave={onHandleSave} {...{ columns, data }} />
 				</>
 			)}
 		</table>
@@ -23,5 +30,6 @@ Table.propTypes = {
 	columns: PropTypes.object,
 	selectedSort: PropTypes.object,
 	onSort: PropTypes.func,
-	children: PropTypes.array
+	children: PropTypes.array,
+	onHandleSave: PropTypes.func.isRequired
 }

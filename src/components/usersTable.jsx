@@ -10,7 +10,8 @@ const UsersTable = ({
 	onDeleteUser,
 	users,
 	selectedSort,
-	onSort
+	onSort,
+	onHandleSave
 }) => {
 	const columns = {
 		name: { path: 'name', name: 'Имя' },
@@ -47,6 +48,7 @@ const UsersTable = ({
 			selectedSort={selectedSort}
 			columns={columns}
 			data={users}
+			onHandleSave={onHandleSave}
 		/>
 	)
 }
@@ -58,5 +60,6 @@ UsersTable.propTypes = {
 	onUpdateBookmark: PropTypes.func.isRequired,
 	onDeleteUser: PropTypes.func.isRequired,
 	selectedSort: PropTypes.object.isRequired,
-	onSort: PropTypes.func.isRequired
+	onSort: PropTypes.func.isRequired,
+	onHandleSave: PropTypes.func.isRequired
 }

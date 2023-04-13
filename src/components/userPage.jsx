@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import api from '../api'
 import Loader from './loader'
+import PropTypes from 'prop-types'
 
-const UserPage = () => {
+const UserPage = ({ userId }) => {
 	const history = useHistory()
 	const [user, setUser] = useState(null)
 	const [isLoading, setIsLoading] = useState(true)
-	const params = useParams()
-	const { userId } = params
 
 	useEffect(() => {
 		api.users.getById(userId).then((data) => setUser(data))
 	}, [userId])
-
 	useEffect(() => {
 		if (user || user === undefined) {
 			setIsLoading(false)
@@ -67,3 +65,7 @@ const UserPage = () => {
 }
 
 export default UserPage
+
+UserPage.propTypes = {
+	userId: PropTypes.string.isRequired
+}
