@@ -7,11 +7,6 @@
     <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="final result react-router-dom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/usersTable.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/IlyaL/Desktop/Новая папка&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/IlyaL/Desktop/Новая папка/FastCompany&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -184,6 +179,8 @@
       <workItem from="1681177014387" duration="18862000" />
       <workItem from="1681200254378" duration="45000" />
       <workItem from="1681346627908" duration="4208000" />
+      <workItem from="1681359728467" duration="252000" />
+      <workItem from="1681360007073" duration="76000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
