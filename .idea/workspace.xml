@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="final result react-router-dom">
-      <change afterPath="$PROJECT_DIR$/src/components/usersList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tableBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/usersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,27 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/IlyaL/Desktop/Новая папка/FastCompany",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/FastCompany&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="DEBUG" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -181,6 +188,18 @@
       <workItem from="1681200254378" duration="45000" />
       <workItem from="1681346627908" duration="4208000" />
       <workItem from="1681366356590" duration="4439000" />
+      <workItem from="1681371581038" duration="164000" />
+      <workItem from="1681371811899" duration="67000" />
+      <workItem from="1681373855396" duration="292000" />
+      <workItem from="1681376735575" duration="72000" />
+      <workItem from="1681551181527" duration="320000" />
+      <workItem from="1681707419563" duration="4792000" />
+      <workItem from="1681732980993" duration="420000" />
+      <workItem from="1681777533730" duration="21000" />
+      <workItem from="1681783636600" duration="2069000" />
+      <workItem from="1681789555956" duration="12000" />
+      <workItem from="1681877774057" duration="1291000" />
+      <workItem from="1682292278795" duration="20948000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -361,7 +380,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

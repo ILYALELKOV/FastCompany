@@ -22,6 +22,7 @@ module.exports = {
 		'space-before-function-paren': [
 			'error',
 			{ anonymous: 'always', named: 'never' }
-		]
+		],
+		'no-useless-return': 'off'
 	}
 }

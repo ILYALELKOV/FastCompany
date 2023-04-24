@@ -22,6 +22,7 @@ const TableBody = ({ data, columns, onHandleSave }) => {
 						<td key={column}>
 							{index === 0 ? (
 								<a
+									className="link_name"
 									onClick={() => {
 										onHandleSave(item)
 									}}

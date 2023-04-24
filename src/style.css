@@ -58,4 +58,13 @@ body {
     margin-top: 20px;
 }
 
+.link_name {
+    color: black;
+    text-decoration: none;
+}
+
+.link_name:hover {
+    color: #2ff987;
+}
+
 

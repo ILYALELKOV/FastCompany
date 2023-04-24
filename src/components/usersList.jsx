@@ -7,6 +7,7 @@ import { useHistory } from 'react-router-dom'
 import api from '../api'
 import _ from 'lodash'
 import { paginate } from '../utils/paginate'
+import TextField from './textField'
 
 const UsersList = () => {
 	const [currentPage, setCurrentPage] = useState(1)
@@ -15,6 +16,14 @@ const UsersList = () => {
 	const [sortBy, setSortBy] = useState({ iter: 'name', order: 'asc' })
 	const [users, setUsers] = useState([])
 	const history = useHistory()
+	const [searchElement, setSearchElement] = useState('')
+
+	const handleSearchUser = ({ target }) => {
+		setSearchElement(target.value)
+		if (selectedProf) {
+			setSelectedProf(null)
+		}
+	}
 
 	useEffect(() => {
 		api.users.fetchAll().then((data) => setUsers(data))
@@ -63,13 +72,27 @@ const UsersList = () => {
 		const userId = item._id
 		history.push(`/users/${userId}`)
 	}
+
+	const filterUsers = (users) => {
+		return users.filter((user) => {
+			const name = user.name.toLowerCase()
+			return name.includes(searchElement.toLowerCase())
+		})
+	}
+
 	if (users) {
 		const filteredUsers = selectedProf
-			? users.filter(
-					(user) =>
-						JSON.stringify(user.profession) === JSON.stringify(selectedProf)
+			? filterUsers(
+					users.filter(
+						(user) =>
+							JSON.stringify(user.profession) === JSON.stringify(selectedProf)
+					)
 			  )
-			: users
+			: filterUsers(users)
+
+		if (selectedProf && searchElement !== '') {
+			setSearchElement('')
+		}
 
 		const count = filteredUsers.length
 		const sortedUsers = _.orderBy(filteredUsers, [sortBy.path], [sortBy.order])
@@ -93,6 +116,12 @@ const UsersList = () => {
 				)}
 				<div className="d-flex flex-column">
 					<SearchStatus length={count} />
+					<TextField
+						name="search"
+						onChange={handleSearchUser}
+						value={searchElement}
+						placeholder="Search..."
+					/>
 					{count > 0 && (
 						<UsersTable
 							selectedSort={sortBy}

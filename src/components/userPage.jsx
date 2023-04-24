@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import api from '../api'
 import Loader from './loader'
 import PropTypes from 'prop-types'
+import Qualitie from './qualitie'
 
 const UserPage = ({ userId }) => {
 	const history = useHistory()
@@ -33,14 +34,7 @@ const UserPage = ({ userId }) => {
 					<p>Профессия: {user.profession.name}</p>
 					<p>
 						Качества:
-						{user.qualities.map((qualitie) => (
-							<span
-								className={'fs-7 m-1 badge bg-' + qualitie.color}
-								key={qualitie._id}
-							>
-								{qualitie.name}
-							</span>
-						))}
+						<Qualitie user={user} />
 					</p>
 					<p>Встретился раз: {user.completedMeetings}</p>
 					<p>Оценка: {user.rate}</p>
@@ -57,7 +51,17 @@ const UserPage = ({ userId }) => {
 				</div>
 			) : (
 				<div className="text-center mt-5 text-danger">
-					<h1>Пользователь не найден</h1>
+					<h1>
+						Пользователь <span>{userId}</span> не найден
+					</h1>
+					<button
+						onClick={() => {
+							handleSave()
+						}}
+						className="btn_all_users"
+					>
+						Все пользователи
+					</button>
 				</div>
 			)}
 		</div>
