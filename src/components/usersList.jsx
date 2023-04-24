@@ -8,6 +8,7 @@ import api from '../api'
 import _ from 'lodash'
 import { paginate } from '../utils/paginate'
 import TextField from './textField'
+import Loader from './loader'
 
 const UsersList = () => {
 	const [currentPage, setCurrentPage] = useState(1)
@@ -17,6 +18,13 @@ const UsersList = () => {
 	const [users, setUsers] = useState([])
 	const history = useHistory()
 	const [searchElement, setSearchElement] = useState('')
+	const [isLoading, setIsLoading] = useState(true)
+
+	useEffect(() => {
+		if (users.length > 0) {
+			setIsLoading(false)
+		}
+	}, [users])
 
 	const handleSearchUser = ({ target }) => {
 		setSearchElement(target.value)
@@ -102,47 +110,56 @@ const UsersList = () => {
 		}
 		return (
 			<div className="d-flex justify-content-center mt-3">
-				{professions && (
-					<div className="d-flex flex-column flex-shrink-0 p-2">
-						<GroupList
-							selectedItem={selectedProf}
-							items={professions}
-							onItemSelect={handleProfessionSelect}
-						/>
-						<button className="btn btn-warning mt-2 mt-3" onClick={clearFilter}>
-							Очистить
-						</button>
-					</div>
+				{isLoading ? (
+					<Loader />
+				) : (
+					<>
+						{professions && (
+							<div className="d-flex flex-column flex-shrink-0 p-2">
+								<GroupList
+									selectedItem={selectedProf}
+									items={professions}
+									onItemSelect={handleProfessionSelect}
+								/>
+								<button
+									className="btn btn-warning mt-2 mt-3"
+									onClick={clearFilter}
+								>
+									Очистить
+								</button>
+							</div>
+						)}
+						<div className="d-flex flex-column">
+							<SearchStatus length={count} />
+							<TextField
+								name="search"
+								onChange={handleSearchUser}
+								value={searchElement}
+								placeholder="Search..."
+							/>
+							{count > 0 && (
+								<UsersTable
+									selectedSort={sortBy}
+									onSort={handleSort}
+									onDeleteUser={handleDeleteUser}
+									onUpdateBookmark={handleUpdateBookmark}
+									users={userCrop}
+									onDelete={handleDeleteUser}
+									onToggleBookmark={handleUpdateBookmark}
+									onHandleSave={handleSave}
+								/>
+							)}
+							<div className="d-flex justify-content-center">
+								<Pagination
+									itemsCount={count}
+									pageSize={pageSize}
+									currentPage={currentPage}
+									onPageChange={handlePageChange}
+								/>
+							</div>
+						</div>
+					</>
 				)}
-				<div className="d-flex flex-column">
-					<SearchStatus length={count} />
-					<TextField
-						name="search"
-						onChange={handleSearchUser}
-						value={searchElement}
-						placeholder="Search..."
-					/>
-					{count > 0 && (
-						<UsersTable
-							selectedSort={sortBy}
-							onSort={handleSort}
-							onDeleteUser={handleDeleteUser}
-							onUpdateBookmark={handleUpdateBookmark}
-							users={userCrop}
-							onDelete={handleDeleteUser}
-							onToggleBookmark={handleUpdateBookmark}
-							onHandleSave={handleSave}
-						/>
-					)}
-					<div className="d-flex justify-content-center">
-						<Pagination
-							itemsCount={count}
-							pageSize={pageSize}
-							currentPage={currentPage}
-							onPageChange={handlePageChange}
-						/>
-					</div>
-				</div>
 			</div>
 		)
 	}

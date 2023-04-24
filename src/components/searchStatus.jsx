@@ -1,16 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Loader from './loader'
 
 const SearchStatus = ({ length }) => {
-	const [isLoading, setIsLoading] = useState(true)
-
-	useEffect(() => {
-		if (length > 0) {
-			setIsLoading(false)
-		}
-	}, [length])
-
 	const renderMessage = (number) => {
 		const last = Number(number.toString().slice(-1))
 
@@ -27,18 +18,9 @@ const SearchStatus = ({ length }) => {
 	return (
 		<div>
 			<span
-				className={
-					'fs-5 m-2 badge ' +
-					(isLoading ? 'bg-info' : length > 0 ? 'bg-dark ' : 'bg-danger')
-				}
+				className={'fs-5 m-2 badge ' + (length > 0 ? 'bg-dark ' : 'bg-danger')}
 			>
-				{isLoading ? (
-					<Loader />
-				) : length > 0 ? (
-					renderMessage(length)
-				) : (
-					'Никто с тобой не тусанет'
-				)}
+				{length > 0 ? renderMessage(length) : 'Никто с тобой не тусанет'}
 			</span>
 		</div>
 	)
