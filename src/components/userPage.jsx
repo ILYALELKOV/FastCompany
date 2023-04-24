@@ -23,11 +23,9 @@ const UserPage = ({ userId }) => {
 	}
 
 	return (
-		<div>
+		<div className="d-flex justify-content-center mt-3">
 			{isLoading ? (
-				<div className="mt-5">
-					<Loader />
-				</div>
+				<Loader />
 			) : user ? (
 				<div className="card_user">
 					<h2>Имя: {user.name}</h2>

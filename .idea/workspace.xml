@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="add loader component in userList">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="add style in Loader component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/userPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +191,7 @@
       <workItem from="1681783636600" duration="2069000" />
       <workItem from="1681789555956" duration="12000" />
       <workItem from="1681877774057" duration="1291000" />
-      <workItem from="1682292278795" duration="22611000" />
+      <workItem from="1682292278795" duration="22835000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -375,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682319025890</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add style in Loader component">
+      <created>1682319494139</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682319494139</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +412,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create project" />
     <MESSAGE value="create first component" />
     <MESSAGE value="create table" />
     <MESSAGE value="create renderMessage function" />
@@ -430,6 +436,7 @@
     <MESSAGE value="final result react-router-dom" />
     <MESSAGE value="create search logic" />
     <MESSAGE value="add loader component in userList" />
-    <option name="LAST_COMMIT_MESSAGE" value="add loader component in userList" />
+    <MESSAGE value="add style in Loader component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add style in Loader component" />
   </component>
 </project>
