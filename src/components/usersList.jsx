@@ -17,7 +17,7 @@ const UsersList = () => {
 	const [sortBy, setSortBy] = useState({ iter: 'name', order: 'asc' })
 	const [users, setUsers] = useState([])
 	const history = useHistory()
-	const [searchElement, setSearchElement] = useState('')
+	const [searchUser, setSearchUser] = useState('')
 	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
@@ -27,7 +27,7 @@ const UsersList = () => {
 	}, [users])
 
 	const handleSearchUser = ({ target }) => {
-		setSearchElement(target.value)
+		setSearchUser(target.value)
 		if (selectedProf) {
 			setSelectedProf(null)
 		}
@@ -81,25 +81,23 @@ const UsersList = () => {
 		history.push(`/users/${userId}`)
 	}
 
-	const filterUsers = (users) => {
+	const searchUsers = (users) => {
 		return users.filter((user) => {
 			const name = user.name.toLowerCase()
-			return name.includes(searchElement.toLowerCase())
+			return name.includes(searchUser.toLowerCase())
 		})
 	}
 
 	if (users) {
 		const filteredUsers = selectedProf
-			? filterUsers(
-					users.filter(
-						(user) =>
-							JSON.stringify(user.profession) === JSON.stringify(selectedProf)
-					)
+			? users.filter(
+					(user) =>
+						JSON.stringify(user.profession) === JSON.stringify(selectedProf)
 			  )
-			: filterUsers(users)
+			: searchUsers(users)
 
-		if (selectedProf && searchElement !== '') {
-			setSearchElement('')
+		if (selectedProf && searchUser !== '') {
+			setSearchUser('')
 		}
 
 		const count = filteredUsers.length
@@ -134,7 +132,7 @@ const UsersList = () => {
 							<TextField
 								name="search"
 								onChange={handleSearchUser}
-								value={searchElement}
+								value={searchUser}
 								placeholder="Search..."
 							/>
 							{count > 0 && (
