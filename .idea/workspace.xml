@@ -4,9 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="add style in userPage component">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="refactor code">
+      <change afterPath="$PROJECT_DIR$/src/components/common/table/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page/userListPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page/userPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/loginForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/qualities/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/usersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/bookmark.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qualitie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/qualities/qualitie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qualitiesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/qualities/qualitiesList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/searchStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/table/table.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/table/tableBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/table/tableHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/textField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/userPage/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/userListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/usersTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/IlyaL/Desktop/Новая папка",
+    "last_opened_file_path": "C:/Webstorm/Поток_9/react/FastCompany/src/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -63,6 +88,15 @@
     "ts.external.directory.path": "C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\page\userListPage" />
+      <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\page\userPage" />
+      <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\ui" />
+      <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\page" />
+      <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\common" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="DEBUG" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -70,7 +104,7 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="tableHeader.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/tableHeader.jsx" working-dir="$PROJECT_DIR$/src/components">
+    <configuration name="tableHeader.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/common/table/tableHeader.jsx" working-dir="$PROJECT_DIR$/src/components">
       <method v="2" />
     </configuration>
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -191,7 +225,8 @@
       <workItem from="1681783636600" duration="2069000" />
       <workItem from="1681789555956" duration="12000" />
       <workItem from="1681877774057" duration="1291000" />
-      <workItem from="1682292278795" duration="25491000" />
+      <workItem from="1682292278795" duration="29485000" />
+      <workItem from="1682385901979" duration="4333000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -389,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682319743605</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="refactor code">
+      <created>1682331586995</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682331586995</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +463,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create table" />
     <MESSAGE value="create renderMessage function" />
-    <MESSAGE value="refactor code" />
     <MESSAGE value="create all components" />
     <MESSAGE value="create style" />
     <MESSAGE value="final result, compositions components" />
@@ -444,6 +485,7 @@
     <MESSAGE value="add loader component in userList" />
     <MESSAGE value="add style in Loader component" />
     <MESSAGE value="add style in userPage component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add style in userPage component" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
   </component>
 </project>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import api from '../api'
-import Loader from './loader'
+import api from '../../../api'
+import Loader from '../../common/loader'
 import PropTypes from 'prop-types'
-import Qualitie from './qualitie'
+import Qualitie from '../../ui/qualities/qualitie'
 
 const UserPage = ({ userId }) => {
 	const history = useHistory()

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import GroupList from './groupList'
-import SearchStatus from './searchStatus'
-import UsersTable from './usersTable'
-import Pagination from './pagination'
+import GroupList from '../../common/groupList'
+import SearchStatus from '../../ui/searchStatus'
+import UsersTable from '../../ui/usersTable'
+import Pagination from '../../common/pagination'
 import { useHistory } from 'react-router-dom'
-import api from '../api'
+import api from '../../../api'
 import _ from 'lodash'
-import { paginate } from '../utils/paginate'
-import TextField from './textField'
-import Loader from './loader'
+import { paginate } from '../../../utils/paginate'
+import TextField from '../../common/form/textField'
+import Loader from '../../common/loader'
 
-const UsersList = () => {
+const UsersListPage = () => {
 	const [currentPage, setCurrentPage] = useState(1)
 	const [professions, setProfession] = useState()
 	const [selectedProf, setSelectedProf] = useState()
@@ -162,4 +162,4 @@ const UsersList = () => {
 		)
 	}
 }
-export default UsersList
+export default UsersListPage

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Bookmark from './bookmark'
-import Button from '../UI/button'
-import QualitiesList from './qualitiesList'
-import Table from './table'
+import Bookmark from '../common/bookmark'
+import Button from './button'
+import Qualities from './qualities'
+import Table from '../common/table/table'
 
 const UsersTable = ({
 	onUpdateBookmark,
@@ -17,7 +17,7 @@ const UsersTable = ({
 		name: { path: 'name', name: 'Имя' },
 		qualities: {
 			name: 'Качества',
-			component: (users) => <QualitiesList user={users} />
+			component: (users) => <Qualities user={users} />
 		},
 		professions: { path: 'profession.name', name: 'Профессия' },
 		completedMeetings: { path: 'completedMeetings', name: 'Встретился, раз' },
