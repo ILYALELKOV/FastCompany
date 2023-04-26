@@ -4,34 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="refactor code">
-      <change afterPath="$PROJECT_DIR$/src/components/common/table/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page/userListPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page/userPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/loginForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/qualities/index.js" afterDir="false" />
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="Project restructuring">
+      <change afterPath="$PROJECT_DIR$/src/components/common/form/radioField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/form/selectField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/registerForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/bookmark.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/groupList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/loader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qualitie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/qualities/qualitie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qualitiesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/qualities/qualitiesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/searchStatus.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/table/table.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/table/tableBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/table/tableHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/userPage/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/userListPage/usersListPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/usersTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loginForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,27 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Webstorm/Поток_9/react/FastCompany/src/components",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/FastCompany/src/components&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\page\userListPage" />
@@ -226,7 +206,8 @@
       <workItem from="1681789555956" duration="12000" />
       <workItem from="1681877774057" duration="1291000" />
       <workItem from="1682292278795" duration="29485000" />
-      <workItem from="1682385901979" duration="4333000" />
+      <workItem from="1682385901979" duration="10734000" />
+      <workItem from="1682468945797" duration="2606000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -431,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682331586995</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Project restructuring">
+      <created>1682399339457</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1682399339457</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create table" />
     <MESSAGE value="create renderMessage function" />
     <MESSAGE value="create all components" />
     <MESSAGE value="create style" />
@@ -486,6 +473,7 @@
     <MESSAGE value="add style in Loader component" />
     <MESSAGE value="add style in userPage component" />
     <MESSAGE value="refactor code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
+    <MESSAGE value="Project restructuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project restructuring" />
   </component>
 </project>
