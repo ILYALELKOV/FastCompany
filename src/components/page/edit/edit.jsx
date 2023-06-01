@@ -90,7 +90,7 @@ const Edit = () => {
 				Выберете ваш пол"
 						/>
 						<MultiSelectField
-							name="qualewities"
+							name="qualities"
 							label="Выберете ваши качества"
 							options={qualities}
 							onChange={handleChange}
