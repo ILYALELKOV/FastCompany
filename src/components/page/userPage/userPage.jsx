@@ -18,8 +18,8 @@ const UserPage = ({ userId }) => {
 			setIsLoading(false)
 		}
 	}, [user])
-	const handleSave = () => {
-		history.push(`/users/${userId}/edit`)
+	const handleClick = () => {
+		history.push(history.location.pathname + '/edit')
 	}
 
 	return (
@@ -39,7 +39,7 @@ const UserPage = ({ userId }) => {
 					<div className="btn_container">
 						<button
 							onClick={() => {
-								handleSave()
+								handleClick()
 							}}
 							className="btn_all_users"
 						>
@@ -54,7 +54,7 @@ const UserPage = ({ userId }) => {
 					</h1>
 					<button
 						onClick={() => {
-							handleSave()
+							handleClick()
 						}}
 						className="btn_all_users"
 					>

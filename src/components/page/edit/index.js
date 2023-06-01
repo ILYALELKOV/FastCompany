@@ -1,3 +1,3 @@
-import Edit from './edit'
+import Edit from './editUserPage'
 
 export default Edit

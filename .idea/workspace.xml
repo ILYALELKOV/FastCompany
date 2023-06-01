@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="small change">
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="bag fix in Edit component (MultiSelectField - name change)">
+      <change afterPath="$PROJECT_DIR$/src/components/page/edit/editUserPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/form/multiSelectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/multiSelectField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/edit/edit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/edit/edit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/selectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/selectField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/edit/edit.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/edit/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/edit/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/userPage/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +218,7 @@
       <workItem from="1685418425506" duration="599000" />
       <workItem from="1685498432777" duration="14997000" />
       <workItem from="1685584586076" duration="4858000" />
-      <workItem from="1685594711698" duration="226000" />
+      <workItem from="1685594711698" duration="4995000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -445,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685593927897</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="bag fix in Edit component (MultiSelectField - name change)">
+      <created>1685595038512</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1685595038512</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="final result, compositions components" />
     <MESSAGE value="create pagination functional" />
     <MESSAGE value="finished eslint setting" />
     <MESSAGE value="create UI component and change language in HTML file" />
@@ -500,6 +512,7 @@
     <MESSAGE value="create radio" />
     <MESSAGE value="create Edit component and change Eslint setting and change Api fails" />
     <MESSAGE value="small change" />
-    <option name="LAST_COMMIT_MESSAGE" value="small change" />
+    <MESSAGE value="bag fix in Edit component (MultiSelectField - name change)" />
+    <option name="LAST_COMMIT_MESSAGE" value="bag fix in Edit component (MultiSelectField - name change)" />
   </component>
 </project>
