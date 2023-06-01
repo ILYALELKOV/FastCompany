@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="Project restructuring">
-      <change afterPath="$PROJECT_DIR$/src/components/common/form/radioField.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/form/selectField.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/registerForm.jsx" afterDir="false" />
+    <list default="true" id="9a1b0b74-9903-4562-a772-df6a90af3008" name="Changes" comment="create radio">
+      <change afterPath="$PROJECT_DIR$/src/components/common/form/checkBoxField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/form/multiSelectField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page/edit/edit.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page/edit/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/fake.api/professions.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/fake.api/professions.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/fake.api/user.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/radioField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/radioField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/selectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/selectField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/form/textField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/userPage/userPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/registerForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +61,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Webstorm/Поток_9/react/FastCompany/src/components&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8836.50\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/IlyaL/Desktop/1",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Webstorm\\Поток_9\\react\\fastcompany\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.general",
+    "ts.external.directory.path": "C:\\Users\\IlyaL\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.9011.35\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Webstorm\Поток_9\react\FastCompany\src\components\page\userListPage" />
@@ -207,7 +221,15 @@
       <workItem from="1681877774057" duration="1291000" />
       <workItem from="1682292278795" duration="29485000" />
       <workItem from="1682385901979" duration="10734000" />
-      <workItem from="1682468945797" duration="2606000" />
+      <workItem from="1682468945797" duration="3253000" />
+      <workItem from="1682472473642" duration="5459000" />
+      <workItem from="1685064020141" duration="8711000" />
+      <workItem from="1685168684367" duration="3263000" />
+      <workItem from="1685244290798" duration="1470000" />
+      <workItem from="1685324682911" duration="5314000" />
+      <workItem from="1685418425506" duration="599000" />
+      <workItem from="1685498432777" duration="14997000" />
+      <workItem from="1685584586076" duration="4128000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1678092715733</created>
@@ -419,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682399339457</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="create radio">
+      <created>1682471955544</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1682471955544</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create renderMessage function" />
     <MESSAGE value="create all components" />
     <MESSAGE value="create style" />
     <MESSAGE value="final result, compositions components" />
@@ -474,6 +502,7 @@
     <MESSAGE value="add style in userPage component" />
     <MESSAGE value="refactor code" />
     <MESSAGE value="Project restructuring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project restructuring" />
+    <MESSAGE value="create radio" />
+    <option name="LAST_COMMIT_MESSAGE" value="create radio" />
   </component>
 </project>

@@ -46,6 +46,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     font-size: 18px;
+    width: 150px;
 }
 
 .btn_all_users:hover {

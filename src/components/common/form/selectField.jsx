@@ -7,10 +7,15 @@ const SelectField = ({
 	onChange,
 	defaultOption,
 	options,
+	name,
 	error
 }) => {
 	const getInputClasses = () => {
 		return 'form-select' + (error ? ' is-invalid' : '')
+	}
+
+	const handleChange = ({ target }) => {
+		onChange({ name: target.name, value: target.value })
 	}
 
 	const optionsArray =
@@ -20,24 +25,25 @@ const SelectField = ({
 					value: options[optionName]._id
 			  }))
 			: options
+
 	return (
 		<div className="mb-4">
-			<label htmlFor="validationCustom04" className="form-label">
+			<label htmlFor={name} className="form-label">
 				{label}
 			</label>
 			<select
 				value={value}
-				onChange={onChange}
+				onChange={handleChange}
 				name="profession"
 				className={getInputClasses()}
-				id="validationCustom04"
+				id={name}
 			>
 				<option disabled value="">
 					{defaultOption}
 				</option>
 				{optionsArray &&
 					optionsArray.map((option) => (
-						<option key={option._id} value={option.value}>
+						<option key={option.value} value={option.value}>
 							{option.name}
 						</option>
 					))}
@@ -53,7 +59,8 @@ SelectField.propTypes = {
 	onChange: PropTypes.func,
 	defaultOption: PropTypes.string,
 	options: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-	error: PropTypes.string
+	error: PropTypes.string,
+	name: PropTypes.string
 }
 
 export default SelectField

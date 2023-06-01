@@ -4,23 +4,28 @@ import TextField from '../common/form/textField'
 import api from '../../api'
 import SelectField from '../common/form/selectField'
 import RadioField from '../common/form/radioField'
+import MultiSelectField from '../common/form/multiSelectField'
+import CheckBoxField from '../common/form/checkBoxField'
 
 const RegisterForm = () => {
 	const [data, setData] = useState({
 		email: '',
 		password: '',
 		profession: '',
-		sex: 'male'
+		sex: 'male',
+		qualities: [],
+		licence: false
 	})
 	const [professions, setProfession] = useState()
 	const [errors, setErrors] = useState({})
+	const [qualities, setQualities] = useState({})
 
-	const handleChange = ({ target }) => {
+	const handleChange = (target) => {
 		setData((prevState) => ({ ...prevState, [target.name]: target.value }))
 	}
-
 	useEffect(() => {
 		api.professions.fetchAll().then((data) => setProfession(data))
+		api.qualities.fetchAll().then((data) => setQualities(data))
 	}, [])
 
 	const validatorConfig = {
@@ -47,6 +52,12 @@ const RegisterForm = () => {
 			isRequired: {
 				message: 'Обязательно выберете вашу профессию'
 			}
+		},
+		licence: {
+			isRequired: {
+				message:
+					'Вы не можете использовать наш сервис без подтверждения лицензионного соглашения'
+			}
 		}
 	}
 
@@ -56,13 +67,11 @@ const RegisterForm = () => {
 		return Object.keys(errors).length === 0
 	}
 
-	// const isValid = Object.keys(errors).length === 0
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		const isValid = validate()
 		if (!isValid) return
 	}
-
 	return (
 		<form onSubmit={handleSubmit}>
 			<TextField
@@ -84,6 +93,7 @@ const RegisterForm = () => {
 				label="Выбери свою профессию"
 				options={professions}
 				defaultOption="Chose..."
+				name="professions"
 				onChange={handleChange}
 				error={errors.profession}
 				value={data.profession}
@@ -97,7 +107,24 @@ const RegisterForm = () => {
 				value={data.sex}
 				name="sex"
 				onChange={handleChange}
+				label="
+				Выберете ваш пол"
 			/>
+			<MultiSelectField
+				options={qualities}
+				onChange={handleChange}
+				defaultValue={data.qualities}
+				name="qualities"
+				label="Выберете ваши качества"
+			/>
+			<CheckBoxField
+				name="licence"
+				value={data.licence}
+				onChange={handleChange}
+				error={errors.licence}
+			>
+				Подтвердить <a>лицензионное соглашение</a>
+			</CheckBoxField>
 			<button type="submit" className="btn btn-primary w-100 mx-auto">
 				Submit
 			</button>

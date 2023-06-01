@@ -19,7 +19,7 @@ const UserPage = ({ userId }) => {
 		}
 	}, [user])
 	const handleSave = () => {
-		history.push('/users')
+		history.push(`/users/${userId}/edit`)
 	}
 
 	return (
@@ -43,7 +43,7 @@ const UserPage = ({ userId }) => {
 							}}
 							className="btn_all_users"
 						>
-							Все пользователи
+							Изменить
 						</button>
 					</div>
 				</div>

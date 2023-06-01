@@ -11,6 +11,7 @@ module.exports = {
 	},
 	plugins: ['react'],
 	rules: {
+		'no-trailing-spaces': 'off',
 		'comma-dangle': ['error', 'never'],
 		indent: 'off',
 		'no-tabs': 0,
